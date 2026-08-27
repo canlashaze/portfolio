@@ -1,0 +1,22 @@
+/* Profile Image Styling */
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    filter: drop-shadow(0 10px 30px rgba(20, 184, 166, 0.2));
+    transition: transform 300ms ease-in-out, filter 300ms ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 15px 40px rgba(20, 184, 166, 0.3));
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+}
